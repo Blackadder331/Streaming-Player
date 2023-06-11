@@ -1,0 +1,176 @@
+@font-face {
+  font-family: "NeoNoire";
+  src: url(./fonts/SNNeoNoire-Regular.ttf);
+}
+
+@font-face {
+  font-family: "NeueBit";
+  src: url(./fonts/NeueBit-Bold.otf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+h1 {
+  font-family: "NeoNoire";
+  color: #f94ccb;
+  text-align: center;
+  font-size: 4.75rem;
+  letter-spacing: 0.2rem;
+  padding-bottom: 2.25rem;
+  margin-left: 0.95rem;
+}
+h1 span {
+  margin-left: -1rem;
+}
+p {
+  font-family: Helvetica;
+  color: #f94ccb;
+  text-align: center;
+  font-size: 3.5rem;
+  font-weight: 400;
+  padding-bottom: 0.5rem;
+}
+.url {
+  background-color: #066af7;
+  background-color: #61f3d1;
+  background-color: #11ac88;
+  border: 6px #f94ccb solid;
+  border: 6px #11ac88 solid;
+  /* outline: 4px #dddddd solid; */
+  text-align: center;
+  font-family: monospace;
+  padding: 0.5rem 1rem;
+  font-family: "NeueBit";
+  font-size: 2.2rem;
+  border-radius: 0.275rem 0.275rem 0 0;
+  margin-bottom: -0.5rem;
+  padding-top: 0.65rem;
+  color: #0d201c;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.url p {
+  font-size: 1.75rem;
+  color: #0d201c;
+  margin-top: 0.25rem;
+  font-weight: 800;
+}
+.url p:hover {
+  opacity: 0.5;
+}
+.container {
+  background-color: #c9d6f7;
+  border: 6px #f94ccb solid;
+  background-color: #61f3d1;
+  border: 6px #f94ccb solid;
+  border: 6px #11ac88 solid;
+  padding: 0.75rem 0.75rem;
+  border-radius: 0 0 0.275rem 0.275rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+@keyframes colorchange {
+  0% {
+    color: #f94ccb;
+  } /* Bright Pink */
+  25% {
+    color: #18e3e3;
+  } /* Teal */
+  50% {
+    color: #ffff38;
+  } /* Yellow */
+  75% {
+    color: #0ef839;
+  } /* Green */
+  100% {
+    color: #ff69b4;
+  } /* Bright Pink */
+}
+
+.hyper {
+  animation-name: colorchange;
+  animation-duration: 0.6s;
+  animation-iteration-count: infinite;
+  text-shadow: 3px 3px black;
+  margin-left: 0.25rem;
+}
+
+:root {
+  font-size: 15px;
+}
+
+html {
+  --s: 80px; /* control the size */
+  --c1: #2ee6d7;
+  --c2: #0d0d0d;
+
+  background: linear-gradient(
+      -26.56deg,
+      var(--c1) 33%,
+      var(--c2) 33.3% 66.6%,
+      var(--c1) 67%
+    )
+    0 / var(--s) var(--s);
+  /* 26.56deg = arctan(0.5) */
+}
+html {
+  --s: 80px; /* control the size */
+  --c1: #ffffff;
+  --c2: #0e0c0e;
+
+  background: linear-gradient(
+      -26.56deg,
+      var(--c1) 33%,
+      var(--c2) 33.3% 66.6%,
+      var(--c1) 67%
+    ) -81px 0 / var(--s) var(--s);
+  /* 26.56deg = arctan(0.5) */
+}
+/* html {
+    --s: 140px; 
+    
+    --_g: #0000 52%,#170409  54% 57%,#0000 59%; 
+    background: 
+     radial-gradient(farthest-side at -33.33% 50%,var(--_g)) 0 calc(var(--s)/2),
+     radial-gradient(farthest-side at 50% 133.33%,var(--_g)) calc(var(--s)/2) 0,
+     radial-gradient(farthest-side at 133.33% 50%,var(--_g)),
+     radial-gradient(farthest-side at 50% -33.33%,var(--_g)),
+     #eeeeee; 
+    background-size: calc(var(--s)/4.667) var(--s),var(--s) calc(var(--s)/4.667);
+  }
+   */
+
+body {
+  /* background-color: #4d4d4d; */
+
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section {
+  padding: 0;
+  width: clamp(520px, 100vw, 200rem);
+  display: grid;
+  /* gap: 0.7rem; */
+  scale: 0.85;
+}
+
+/* Spotify Classes 
+
+.pILb1Mxt1ADw55uBp9MT {
+  display: none;
+}
+
+.pILb1Mxt1ADw55uBp9MT {
+  display: none;
+}
+*/
